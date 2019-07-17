@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".clockgo.MainActivity">
+
+<RelativeLayout
+    android:id="@+id/rl_top"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#000000"
+    >
+
+
+    <Button
+        android:id="@+id/bt_showtest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"/>
+
+    <Button
+        android:id="@+id/setTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+android:text="Create New"
+        android:layout_marginTop="50dp"
+        android:textAllCaps="false"
+        />
+
+    <Button
+        android:id="@+id/bt_stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/setTime"
+        android:text="Leave me along!"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"
+        android:background="#000000"
+        />
+
+
+
+
+
+</RelativeLayout>
+
+
+    <com.yydcdut.sdlv.SlideAndDragListView
+        android:id="@+id/lv_showClock"
+        android:layout_below="@+id/rl_top"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:dividerHeight="2px"
+        android:divider="@color/back"
+        >
+    </com.yydcdut.sdlv.SlideAndDragListView>
+
+</RelativeLayout>
